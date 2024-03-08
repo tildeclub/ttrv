@@ -1,0 +1,119 @@
+.TH "TTRV" "1" "June 03, 2019" "Version 1.27.0" "Usage and Commands"
+.SH NAME
+TTRV - Tilde Terminal Reddit Viewer
+.SH SYNOPSIS
+ttrv [URL] [\-s SUBREDDIT]
+.SH DESCRIPTION
+TTRV (Tilde Terminal Reddit Viewer) is a terminal interface to view and interact with reddit.
+.SH OPTIONS
+.TP
+\fBURL\fR
+[optional] Full URL of a submission to open
+
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show this help message and exit
+
+.TP
+\fB\-s SUBREDDIT\fR
+Name of the subreddit that will be loaded on start
+
+.TP
+\fB\-\-log FILE\fR
+Log HTTP requests to the given file
+
+.TP
+\fB\-\-config FILE\fR
+Load configuration settings from the given file
+
+.TP
+\fB\-\-ascii\fR
+Enable ascii\-only mode
+
+.TP
+\fB\-\-monochrome\fR
+Disable color
+
+.TP
+\fB\-\-theme FILE\fR
+Color theme to use, see \-\-list\-themes for valid options
+
+.TP
+\fB\-\-list\-themes\fR
+List all of the available color themes
+
+.TP
+\fB\-\-non\-persistent\fR
+Forget the authenticated user when the program exits
+
+.TP
+\fB\-\-no\-autologin\fR
+Do not authenticate automatically on startup
+
+.TP
+\fB\-\-clear\-auth\fR
+Remove any saved user data before launching
+
+.TP
+\fB\-\-copy\-config\fR
+Copy the default configuration to {HOME}/.config/ttrv/ttrv.cfg
+
+.TP
+\fB\-\-copy\-mailcap\fR
+Copy an example mailcap configuration to {HOME}/.mailcap
+
+.TP
+\fB\-\-enable\-media\fR
+Open external links using programs defined in the mailcap config
+
+.TP
+\fB\-V\fR, \fB\-\-version\fR
+show program's version number and exit
+
+.TP
+\fB\-\-no\-flash\fR
+Disable screen flashing
+
+.TP
+\fB\-\-debug\-info\fR
+Show system and environment information and exit
+
+
+.SH CONTROLS
+Move the cursor using the arrow keys or vim style movement.
+.br
+Press \fBup\fR and \fBdown\fR to scroll through submissions.
+.br
+Press \fBright\fR to view the selected submission and \fBleft\fR to return.
+.br
+Press \fB?\fR to open the help screen.
+.SH FILES
+.TP
+.BR $XDG_CONFIG_HOME/ttrv/ttrv.cfg
+The configuration file can be used to customize default program settings.
+.TP
+.BR $XDG_DATA_HOME/ttrv/refresh-token
+After you login to reddit, your most recent OAuth refresh token will be stored
+for future sessions.
+.TP
+.BR $XDG_DATA_HOME/ttrv/history.log
+This file stores URLs that have been recently opened in order to
+visually highlight them as "seen".
+.SH ENVIRONMENT
+.TP
+.BR TTRV_EDITOR
+Text editor to use when editing comments and submissions. Will fallback to
+\fI$EDITOR\fR. 
+.TP
+.BR TTRV_URLVIEWER
+Url viewer to use to extract links from comments.  Requires a compatible
+program to be installed.
+.TP
+.BR TTRV_BROWSER
+Web browser to use when opening links. Will fallback to \fI$BROWSER\fR.
+.SH AUTHOR
+deepend <root@tilde.club> (2017).
+.SH BUGS
+Report bugs to \fIhttps://github.com/tildeclub/ttrv/issues\fR
+.SH LICENSE
+The MIT License (MIT)

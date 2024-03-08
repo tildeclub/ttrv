@@ -1,0 +1,8 @@
+include version.py
+include CHANGELOG.rst
+include AUTHORS.rst
+include README.md
+include LICENSE
+include ttrv.1
+include ttrv/templates/*
+include ttrv/themes/*

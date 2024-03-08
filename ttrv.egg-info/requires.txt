@@ -1,0 +1,16 @@
+beautifulsoup4
+decorator
+kitchen
+requests>=2.4.0
+six
+
+[:python_version<'3.6']
+mailcap-fix
+
+[test]
+coveralls
+pytest>=3.1.0
+coverage
+mock
+pylint
+vcrpy

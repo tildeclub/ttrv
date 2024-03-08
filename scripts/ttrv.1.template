@@ -1,0 +1,47 @@
+.TH "TTRV" "1" "{release_date}" "Version {version}" "Usage and Commands"
+.SH NAME
+TTRV - Reddit Terminal Viewer
+.SH SYNOPSIS
+{synopsis}
+.SH DESCRIPTION
+{description}
+.SH OPTIONS
+{options}
+.SH CONTROLS
+Move the cursor using the arrow keys or vim style movement.
+.br
+Press \fBup\fR and \fBdown\fR to scroll through submissions.
+.br
+Press \fBright\fR to view the selected submission and \fBleft\fR to return.
+.br
+Press \fB?\fR to open the help screen.
+.SH FILES
+.TP
+.BR $XDG_CONFIG_HOME/ttrv/ttrv.cfg
+The configuration file can be used to customize default program settings.
+.TP
+.BR $XDG_DATA_HOME/ttrv/refresh-token
+After you login to reddit, your most recent OAuth refresh token will be stored
+for future sessions.
+.TP
+.BR $XDG_DATA_HOME/ttrv/history.log
+This file stores URLs that have been recently opened in order to
+visually highlight them as "seen".
+.SH ENVIRONMENT
+.TP
+.BR TTRV_EDITOR
+Text editor to use when editing comments and submissions. Will fallback to
+\fI$EDITOR\fR. 
+.TP
+.BR TTRV_URLVIEWER
+Url viewer to use to extract links from comments.  Requires a compatible
+program to be installed.
+.TP
+.BR TTRV_BROWSER
+Web browser to use when opening links. Will fallback to \fI$BROWSER\fR.
+.SH AUTHOR
+Michael Lazar <lazar.michael22@gmail.com> (2017).
+.SH BUGS
+Report bugs to \fIhttps://github.com/tildeclub/ttrv/issues\fR
+.SH LICENSE
+{license}

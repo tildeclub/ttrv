@@ -1,0 +1,5 @@
+[run]
+source = tvr
+omit = 
+    */__main__.py
+    */packages/praw/*
