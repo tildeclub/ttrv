@@ -196,8 +196,11 @@ class Config(object):
 
     def save_refresh_token(self):
         self._ensure_filepath(self.token_file)
-        with open(self.token_file, 'w+') as fp:
+        flags = os.O_WRONLY | os.O_CREAT | os.O_TRUNC
+        fd = os.open(self.token_file, flags, 0o600)
+        with os.fdopen(fd, 'w') as fp:
             fp.write(self.refresh_token)
+        os.chmod(self.token_file, 0o600)
 
     def delete_refresh_token(self):
         if os.path.exists(self.token_file):
