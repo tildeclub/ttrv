@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ttrv
-Version: 1.27.3
+Version: 1.27.4
 Summary: Tilde Terminal Reddit Viewer
 Home-page: https://github.com/tildeclub/ttrv
 Author: deepend (forked from RTV)
@@ -34,7 +34,7 @@ A text-based interface (TUI) to view and interact with Reddit from your terminal
 </p>
 
 <p align="center">
-<img alt="title image" src="https://github.com/tildeclub/ttrv/raw/master/resources/title_image.png"/>
+<img alt="title image" src="https://github.com/tildeclub/ttrv/raw/main/resources/title_image.png"/>
 </p>
 
 <p align="center">
@@ -54,7 +54,7 @@ A text-based interface (TUI) to view and interact with Reddit from your terminal
 ## Demo
 
 <p align="center">
-<img alt="title image" src="https://github.com/tildeclub/ttrv/raw/master/resources/demo.gif"/>
+<img alt="title image" src="https://github.com/tildeclub/ttrv/raw/main/resources/demo.gif"/>
 </p>
 
 ## Installation
@@ -130,7 +130,7 @@ $ ttrv --copy-config
 You can use [mailcap](https://en.wikipedia.org/wiki/Media_type#Mailcap) to configure how TTRV will open different types of links.
 
 <p align="center">
-<img alt="title image" src="https://github.com/tildeclub/ttrv/raw/master/resources/mailcap.gif"/>
+<img alt="title image" src="https://github.com/tildeclub/ttrv/raw/main/resources/mailcap.gif"/>
 </p>
 
 A mailcap file allows you to associate different MIME media types, like ``image/jpeg`` or ``video/mp4``, with shell commands. This feature is disabled by default because it takes a few extra steps to configure. To get started, copy the default mailcap template to your home directory.
@@ -178,21 +178,21 @@ Themes can be used to customize the look and feel of TTRV
   <tr>
     <td align="center">
       <p><strong>Solarized Dark</strong></p>
-      <img src="https://github.com/tildeclub/ttrv/raw/master/resources/theme_solarized_dark.png"></img>
+      <img src="https://github.com/tildeclub/ttrv/raw/main/resources/theme_solarized_dark.png"></img>
     </td>
     <td align="center">
       <p><strong>Solarized Light</strong></p>
-      <img src="https://github.com/tildeclub/ttrv/raw/master/resources/theme_solarized_light.png"></img>
+      <img src="https://github.com/tildeclub/ttrv/raw/main/resources/theme_solarized_light.png"></img>
     </td>
   </tr>
   <tr>
     <td align="center">
       <p><strong>Papercolor</strong></p>
-      <img src="https://github.com/tildeclub/ttrv/raw/master/resources/theme_papercolor.png"></img>
+      <img src="https://github.com/tildeclub/ttrv/raw/main/resources/theme_papercolor.png"></img>
     </td>
     <td align="center">
       <p><strong>Molokai</strong></p>
-      <img src="https://github.com/tildeclub/ttrv/raw/master/resources/theme_molokai.png"></img>
+      <img src="https://github.com/tildeclub/ttrv/raw/main/resources/theme_molokai.png"></img>
     </td>
   </tr>
 </table>
