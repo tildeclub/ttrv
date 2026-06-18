@@ -38,7 +38,7 @@ from warnings import filterwarnings, warn
 
 # Enable deprecation warnings from this module
 filterwarnings('default', category=DeprecationWarning,
-               module='^praw\.decorators$')
+               module=r'^praw\.decorators$')
 
 
 def alias_function(function, class_name):
